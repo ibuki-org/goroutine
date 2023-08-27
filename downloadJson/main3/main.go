@@ -23,7 +23,7 @@ func main() {
 
 		i := i
 		go func() {
-			// ★ limit が20よるも多いとブロックする
+			// ★ limit が20よりも多いとブロックする
 			limit <- struct{}{}
 			defer wg.Done()
 
